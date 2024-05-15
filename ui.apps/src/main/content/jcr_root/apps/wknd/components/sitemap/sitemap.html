@@ -1,0 +1,40 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}" data-emptytext="Page Sitemap Component" class="cq-placeholder"/>
+<sly data-sly-use.SitemapModel="com.adobe.aem.guides.wknd.core.models.SitemapModel">
+    <div class="ma-sitemap-component" data-show-more="${SitemapModel.showMoreText}" data-show-less="${SitemapModel.showLessText}">
+        <div class="sitemap-component-container column-${SitemapModel.numberOfColumns}">
+            <sly data-sly-list.level1="${SitemapModel.sitemapPageLinks}">
+                <div class="page-block">
+                    <a href="${level1.path}.html" class="page-link">${level1.title}</a>
+                    <ul data-sly-test="${level1.childLinks}" data-sly-list.level2="${level1.childLinks}" class="subpage-list">
+                        <li class="subpage">
+                            <div class="link-container">
+                                <a href="${level2.path}.html" class="subpage-link">${level2.title}</a>
+                            </div>
+                            <ul data-sly-test="${level2.childLinks}" data-sly-list.level3="${level2.childLinks}" class="subpage-list">
+                                <li class="subpage tertiary">
+                                    <div class="link-container">
+                                        <a href="${level3.path}.html" class="subpage-link">${level3.title}</a>
+                                    </div>
+                                </li>
+                                <ul data-sly-test="${level3.childLinks}" data-sly-list.level4="${level3.childLinks}" class="subpage-list">
+                                    <li class="subpage tertiary">
+                                        <div class="link-container">
+                                            <a href="${level4.path}.html" class="subpage-link">${level4.title}</a>
+                                        </div>
+                                    </li>
+                                    <ul data-sly-test="${level4.childLinks}" data-sly-list.level5="${level4.childLinks}" class="subpage-list">
+                                        <li class="subpage tertiary">
+                                            <div class="link-container">
+                                                <a href="${level5.path}.html" class="subpage-link">${level5.title}</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </sly>
+        </div>
+    </div>
+</sly>

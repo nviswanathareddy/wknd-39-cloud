@@ -1,0 +1,4 @@
+{
+  "service.ranking": "0",
+  "user.mapping": ["aem-guides-wknd.core:wknd-safe-content-reader=wknd-safe-service-user"]
+}

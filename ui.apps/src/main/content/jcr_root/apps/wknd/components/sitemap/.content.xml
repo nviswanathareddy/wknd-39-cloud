@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:zg="http://www.cognifide.com/zen-garden/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    cq:isContainer="{Boolean}false"
+    jcr:description="Sitemap component CF (not to be confused with Sitemap XML) is used to display full site structure within a block. Usually placed as a single component on a page that displays all pages."
+    jcr:primaryType="cq:Component"
+    jcr:title="Sitemap"
+    componentGroup="WKND Sites Project - Content"/>

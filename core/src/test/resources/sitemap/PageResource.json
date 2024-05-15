@@ -1,0 +1,82 @@
+{
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Wed Nov 15 2023 10:56:18 GMT+0530",
+    "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+            "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": "Home",
+        "jcr:versionHistory": "ed0b3424-1b39-4cd4-8ddd-c4a42857e039",
+        "ccPath": "/content/cf/demo/en_GB/configuration/client-context-configuration",
+        "template": "/content/cf/demo/en_GB/templates/bootstrap-template",
+        "cq:template": "/apps/zg/zenGarden/templates/site/zenPage",
+        "jcr:predecessors": [
+            "40e1f460-6ae5-4eea-9771-9424f92a13a9"
+        ],
+        "jcr:created": "Wed Nov 15 2023 10:56:18 GMT+0530",
+        "jcr:baseVersion": "40e1f460-6ae5-4eea-9771-9424f92a13a9",
+        "jcr:isCheckedOut": true,
+        "newsfeedDate": "Wed Nov 15 2023 10:56:18 GMT+0530",
+        "pageTitle": "Home",
+        "jcr:uuid": "06bb7463-b9c7-49e3-954f-707e0ed4e567",
+        "sling:resourceType": "cf/core/renderers/gskPageRenderer"
+    },
+    "services": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Wed Nov 15 2023 10:56:18 GMT+0530"
+    },
+    "components": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Wed Nov 15 2023 10:56:19 GMT+0530"
+    },
+    "products": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Wed Nov 15 2023 10:56:19 GMT+0530"
+    },
+    "events": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Wed Nov 15 2023 10:56:19 GMT+0530"
+    },
+    "product": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Wed Nov 15 2023 10:56:21 GMT+0530"
+    },
+    "indication": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Wed Nov 15 2023 10:56:21 GMT+0530"
+    },
+    "therapy": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Wed Nov 15 2023 10:56:22 GMT+0530"
+    },
+    "updates": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Wed Nov 15 2023 10:56:23 GMT+0530"
+    },
+    "features": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Wed Nov 15 2023 10:56:26 GMT+0530"
+    },
+    "speakers": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Wed Nov 15 2023 10:56:27 GMT+0530"
+    },
+    "sitemap-ma": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Mon Dec 04 2023 12:05:14 GMT+0530"
+    }
+}

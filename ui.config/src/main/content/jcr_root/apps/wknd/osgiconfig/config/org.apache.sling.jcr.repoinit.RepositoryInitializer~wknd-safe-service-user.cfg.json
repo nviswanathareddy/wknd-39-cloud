@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create service user wknd-safe-service-user\n",
+        "set ACL for wknd-safe-service-user\n\tallow jcr:read on /content restriction(rep:ntNames, cq:Page, cq:PageContent, dam:Asset, dam:AssetContent)\nend",
+        "set ACL for wknd-safe-service-user\n\tallow jcr:read on /content/dam restriction(rep:itemNames, metadata)\nend"
+    ]
+}

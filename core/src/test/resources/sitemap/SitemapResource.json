@@ -1,0 +1,18 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "numberOfColumns": "3",
+  "jcr:lastModifiedBy": "admin",
+  "showMoreText": "show less",
+  "jcr:created": "Fri May 03 2024 22:13:58 GMT+0530",
+  "maxLevel": "3",
+  "componentSubGroup": "Hyperlinks",
+  "jcr:lastModified": "Fri May 03 2024 22:18:05 GMT+0530",
+  "excludedPaths": [
+    "/content/wknd/es",
+    "/content/wknd/it"
+  ],
+  "sling:resourceType": "wknd/components/sitemap",
+  "showLessText": "show less",
+  "rootPagePath": "/content/wknd"
+}

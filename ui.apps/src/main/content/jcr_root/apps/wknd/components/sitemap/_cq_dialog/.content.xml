@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Sitemap "
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <columns
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <tabs
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                        <items jcr:primaryType="nt:unstructured">
+                            <sitemapItems
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Sitemap Items"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <columns
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <rootPagePath
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                fieldDescription="Specify starting page. Default starting point is a first page under site root."
+                                                fieldLabel="Start from"
+                                                localePath="/"
+                                                name="./rootPagePath"
+                                                rootPath="/content"/>
+                                            <numberOfColumns
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                defaultValue="4"
+                                                fieldDescription="Sitemap will adapt as closely as possible to given number of columns, based on the site's structure."
+                                                fieldLabel="Number of columns"
+                                                max="4"
+                                                min="1"
+                                                name="./numberOfColumns"
+                                                required="{Boolean}true"/>
+                                            <depth
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                defaultValue="2"
+                                                fieldDescription="Define the depth of the Sitemap from site root. Eg '2' shows children, '3' grandchildren etc."
+                                                fieldLabel="Depth"
+                                                max="3"
+                                                min="1"
+                                                name="./maxLevel"
+                                                required="{Boolean}true"/>
+                                            <excludedPaths
+                                                granite:class="cui-complexmultifield multifield-full-width with-separator"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}false"
+                                                fieldLabel="Excluded Paths">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./excludedPaths">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <excludedPaths
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                            hideLabel="{Boolean}true"
+                                                            name="./excludedPaths"
+                                                            required="{Boolean}true"
+                                                            rootPath="/content"/>
+                                                    </items>
+                                                </field>
+                                            </excludedPaths>
+                                        </items>
+                                    </columns>
+                                </items>
+                            </sitemapItems>
+                            <showLabels
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Show Labels"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <columns
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <showMoreText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Placeholder for Show More Text"
+                                                fieldLabel="Show more Text placeholder (show more)"
+                                                name="./showMoreText"
+                                                value="show less"/>
+                                            <showLessText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Placeholder for Show Less Text"
+                                                fieldLabel="Show less Text placeholder (show less)"
+                                                name="./showLessText"
+                                                value="show less"/>
+                                        </items>
+                                    </columns>
+                                </items>
+                            </showLabels>
+                        </items>
+                    </tabs>
+                </items>
+            </columns>
+        </items>
+    </content>
+</jcr:root>
